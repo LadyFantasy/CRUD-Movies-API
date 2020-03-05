@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Search</title>
+  </head>
+  <body>
+    <form
+      enctype="multipart/form-data"
+      action="http://localhost:3000/movies"
+      method="POST"
+    >
+      <input name="image" type="file" />
+      <input name="name" type="text" placeholder="Name of the movie or serie" />
+      <input name="type" type="text" placeholder="type" />
+      <input name="category" type="text" placeholder="category" />
+
+      <input type="submit" value="Upload image" />
+    </form>
+  </body>
+</html>
