@@ -74,7 +74,7 @@ async function isAdmin(req, res, next) {
 //serialize and deserialize
 
 passport.serializeUser(function (user, cb) {
-  cb(null, user.user);
+  cb(null, user.id);
 });
 
 passport.deserializeUser(async function (id, cb) {
